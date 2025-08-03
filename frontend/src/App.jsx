@@ -2,7 +2,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Auth from './Auth.jsx';   // Your signup page
-import Login from './Login.jsx'; // Your login page
+import Login from './login.jsx'; // Your login page
 
 function App() {
   return (
