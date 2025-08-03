@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import { Link } from 'react-router-dom';
 import './Auth.css';
 function Auth(){
@@ -10,7 +10,7 @@ function Auth(){
     try{
     e.preventDefault();
     if (username.trim().length > 0 && email.trim().length > 0 && password.trim().length > 0){
-      const response = await fetch('http://localhost:5000/api/auth/register',{
+      const response = await fetch('https://m-auth.onrender.com/api/auth/register',{
         method:'POST',
         headers:{
         'content-type' : 'application/json'

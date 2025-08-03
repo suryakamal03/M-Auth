@@ -9,7 +9,7 @@ async function login(e) { // <-- Accept the event 'e'
   e.preventDefault(); // <-- Stop the page from reloading
 
   try {
-    const response = await fetch('http://localhost:5000/api/auth/login', {
+    const response = await fetch('https://m-auth.onrender.com/api/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // Corrected 'content-type'
